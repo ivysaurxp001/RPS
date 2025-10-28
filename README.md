@@ -1,6 +1,8 @@
 # Encrypted Rock-Paper-Scissors Game
 
-A **privacy-preserving** Rock-Paper-Scissors game built with **Zama FHEVM** technology, featuring **Fully Homomorphic Encryption** for confidential on-chain gameplay. This project demonstrates the power of encrypted smart contracts in creating truly private blockchain applications.
+A privacy-preserving Rock-Paper-Scissors game built with Zama FHEVM technology, featuring Fully Homomorphic Encryption for confidential on-chain gameplay. Experience truly private blockchain gaming where your moves remain encrypted until the final result.
+
+**Live Demo**: [https://rps-site.vercel.app/](https://rps-site.vercel.app/)
 
 ## Key Features
 
@@ -11,6 +13,39 @@ A **privacy-preserving** Rock-Paper-Scissors game built with **Zama FHEVM** tech
 - **Multi-Network**: Deployed on Sepolia testnet and local Hardhat
 - **Zero-Knowledge**: Individual moves remain completely private
 
+## Quick Start
+
+### Play Online (Recommended)
+
+1. Visit [https://rps-site.vercel.app/](https://rps-site.vercel.app/)
+2. Connect MetaMask to Sepolia testnet
+3. Get Sepolia ETH from [Sepolia Faucet](https://sepoliafaucet.com/)
+4. Start playing the encrypted Rock-Paper-Scissors game!
+
+### MetaMask Setup for Sepolia
+
+- **Network Name**: Sepolia Test Network
+- **RPC URL**: `https://sepolia.infura.io/v3/YOUR_INFURA_KEY`
+- **Chain ID**: 11155111
+- **Currency Symbol**: ETH
+
+## How to Play
+
+### Game Flow
+
+1. **Create Game**: Player 1 creates a new game
+2. **Submit Move**: Player 1 submits encrypted move (Rock/Paper/Scissors)
+3. **Join Game**: Player 2 joins and submits their encrypted move
+4. **Auto-Resolve**: Contract determines winner using homomorphic encryption
+5. **View Results**: Both players can decrypt and verify the result
+
+### Privacy Features
+
+- **Encrypted Moves**: Your moves are encrypted using FHE before submission
+- **Private Computation**: Winner determination happens on-chain without revealing moves
+- **Verifiable Results**: Results can be decrypted and verified by both players
+- **Zero-Knowledge**: Individual moves stay completely private
+
 ## Architecture
 
 ### Smart Contracts (`packages/fhevm-hardhat-template`)
@@ -20,7 +55,6 @@ A **privacy-preserving** Rock-Paper-Scissors game built with **Zama FHEVM** tech
   - Encrypted move submission with zero-knowledge proofs
   - Homomorphic winner determination
   - Result decryption permissions
-
 
 ### Frontend (`packages/site`)
 
@@ -46,15 +80,15 @@ A **privacy-preserving** Rock-Paper-Scissors game built with **Zama FHEVM** tech
 - `getGame(gameId)`: Get game information
 - `getNextGameId()`: Get next available game ID
 
-## Quick Start
+## Development
 
 ### Prerequisites
 
-- **Node.js** 20+ 
+- **Node.js** 20+
 - **MetaMask** browser extension
 - **Sepolia ETH** (for testnet) - Get from [Sepolia Faucet](https://sepoliafaucet.com/)
 
-### Installation
+### Local Development
 
 ```bash
 # Clone repository
@@ -79,61 +113,6 @@ INFURA_API_KEY="your_infura_api_key_here"
 # Optional: Etherscan API key for verification
 ETHERSCAN_API_KEY="your_etherscan_api_key_here"
 ```
-
-##  How to Play
-
-### Option 1: Play on Sepolia Testnet (Recommended)
-
-1. **Deploy contract to Sepolia:**
-   ```bash
-   cd packages/fhevm-hardhat-template
-   npx hardhat deploy --network sepolia
-   ```
-
-2. **Start frontend:**
-   ```bash
-   npm run dev:mock
-   ```
-
-3. **Connect MetaMask to Sepolia:**
-   - Network: Sepolia
-   - RPC URL: `https://sepolia.infura.io/v3/YOUR_INFURA_KEY`
-   - Chain ID: 11155111
-
-4. **Play the game!**
-
-### Option 2: Play on Local Hardhat
-
-1. **Start Hardhat node:**
-   ```bash
-   npm run hardhat-node
-   ```
-
-2. **Deploy to localhost:**
-   ```bash
-   cd packages/fhevm-hardhat-template
-   npx hardhat deploy --network localhost
-   ```
-
-3. **Start frontend:**
-   ```bash
-   npm run dev:mock
-   ```
-
-4. **Add Hardhat network to MetaMask:**
-   - Network Name: Hardhat
-   - RPC URL: http://127.0.0.1:8545
-   - Chain ID: 31337
-
-## Game Flow
-
-1. **Create Game**: Player 1 creates a new game
-2. **Submit Move**: Player 1 submits encrypted move (Rock/Paper/Scissors)
-3. **Join Game**: Player 2 joins and submits their encrypted move
-4. **Auto-Resolve**: Contract determines winner using homomorphic encryption
-5. **View Results**: Both players can decrypt and verify the result
-
-## Development
 
 ### Available Scripts
 
@@ -195,6 +174,7 @@ FHEVM-RPS/
 
 ## Links
 
+- **Live Demo**: [https://rps-site.vercel.app/](https://rps-site.vercel.app/)
 - **Contract on Sepolia**: [Etherscan](https://sepolia.etherscan.io/address/0x68278Bf0811A896C80e6e36c88e5c32BB757e5a9)
 - **Zama FHEVM Documentation**: [docs.zama.ai](https://docs.zama.ai/fhevm)
 - **Sepolia Faucet**: [sepoliafaucet.com](https://sepoliafaucet.com/)
