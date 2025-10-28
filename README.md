@@ -21,7 +21,6 @@ A **privacy-preserving** Rock-Paper-Scissors game built with **Zama FHEVM** tech
   - Homomorphic winner determination
   - Result decryption permissions
 
-- **`FHECounter.sol`**: Demo contract showcasing basic FHEVM operations
 
 ### Frontend (`packages/site`)
 
@@ -60,7 +59,7 @@ A **privacy-preserving** Rock-Paper-Scissors game built with **Zama FHEVM** tech
 ```bash
 # Clone repository
 git clone <your-repo-url>
-cd hello-fhevm
+cd FHEVM-RPS
 
 # Install dependencies
 npm install
@@ -157,12 +156,11 @@ npm run hardhat-node      # Start local Hardhat node
 ### Project Structure
 
 ```
-hello-fhevm/
+FHEVM-RPS/
 ├── packages/
 │   ├── fhevm-hardhat-template/    # Smart contracts
 │   │   ├── contracts/
-│   │   │   ├── RockPaperScissors.sol
-│   │   │   └── FHECounter.sol
+│   │   │   └── RockPaperScissors.sol
 │   │   ├── deploy/
 │   │   └── test/
 │   ├── site/                      # Frontend
