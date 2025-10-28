@@ -1,17 +1,17 @@
-# 🔐 Encrypted Rock-Paper-Scissors Game
+# Encrypted Rock-Paper-Scissors Game
 
 A **privacy-preserving** Rock-Paper-Scissors game built with **Zama FHEVM** technology, featuring **Fully Homomorphic Encryption** for confidential on-chain gameplay. This project demonstrates the power of encrypted smart contracts in creating truly private blockchain applications.
 
-## ✨ Key Features
+## Key Features
 
-- 🔒 **Confidential Moves**: Player moves are encrypted client-side before submission
-- 🧮 **On-Chain Encrypted Logic**: Winner determination using homomorphic encryption
-- ✅ **Verifiable Results**: Decrypt and verify outcomes without revealing moves
-- 🎨 **Modern UI**: Glass morphism design with animated gradient backgrounds
-- 🌐 **Multi-Network**: Deployed on Sepolia testnet and local Hardhat
-- 🔐 **Zero-Knowledge**: Individual moves remain completely private
+- **Confidential Moves**: Player moves are encrypted client-side before submission
+- **On-Chain Encrypted Logic**: Winner determination using homomorphic encryption
+- **Verifiable Results**: Decrypt and verify outcomes without revealing moves
+- **Modern UI**: Glass morphism design with animated gradient backgrounds
+- **Multi-Network**: Deployed on Sepolia testnet and local Hardhat
+- **Zero-Knowledge**: Individual moves remain completely private
 
-## 🏗️ Architecture
+## Architecture
 
 ### Smart Contracts (`packages/fhevm-hardhat-template`)
 
@@ -30,14 +30,14 @@ A **privacy-preserving** Rock-Paper-Scissors game built with **Zama FHEVM** tech
 - **MetaMask** wallet integration
 - **FHEVM React** library for encryption/decryption
 
-## 📋 Contract Information
+## Contract Information
 
 ### Deployed Contracts
 
 | Network | Contract Address | Chain ID | Status |
 |---------|------------------|----------|--------|
-| **Sepolia** | `0x68278Bf0811A896C80e6e36c88e5c32BB757e5a9` | 11155111 | ✅ Active |
-| **Hardhat Local** | `0xD8110135EE4beF2240132220546fd6c8dAAF8bb6` | 31337 | ✅ Active |
+| **Sepolia** | `0x68278Bf0811A896C80e6e36c88e5c32BB757e5a9` | 11155111 | Active |
+| **Hardhat Local** | `0xD8110135EE4beF2240132220546fd6c8dAAF8bb6` | 31337 | Active |
 
 ### Contract Functions
 
@@ -46,7 +46,7 @@ A **privacy-preserving** Rock-Paper-Scissors game built with **Zama FHEVM** tech
 - `getGame(gameId)`: Get game information
 - `getNextGameId()`: Get next available game ID
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -100,7 +100,7 @@ ETHERSCAN_API_KEY="your_etherscan_api_key_here"
    - RPC URL: `https://sepolia.infura.io/v3/YOUR_INFURA_KEY`
    - Chain ID: 11155111
 
-4. **Play the game!** 🎯
+4. **Play the game!**
 
 ### Option 2: Play on Local Hardhat
 
@@ -125,7 +125,7 @@ ETHERSCAN_API_KEY="your_etherscan_api_key_here"
    - RPC URL: http://127.0.0.1:8545
    - Chain ID: 31337
 
-## 🎯 Game Flow
+## Game Flow
 
 1. **Create Game**: Player 1 creates a new game
 2. **Submit Move**: Player 1 submits encrypted move (Rock/Paper/Scissors)
@@ -133,7 +133,7 @@ ETHERSCAN_API_KEY="your_etherscan_api_key_here"
 4. **Auto-Resolve**: Contract determines winner using homomorphic encryption
 5. **View Results**: Both players can decrypt and verify the result
 
-## 🔧 Development
+## Development
 
 ### Available Scripts
 
@@ -172,7 +172,7 @@ FHEVM-RPS/
 └── scripts/                       # Utility scripts
 ```
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Smart Contracts
 - **Solidity** ^0.8.24
@@ -193,17 +193,17 @@ FHEVM-RPS/
 - **Client-side encryption** before submission
 - **On-chain encrypted computation**
 
-## 🔗 Links
+## Links
 
 - **Contract on Sepolia**: [Etherscan](https://sepolia.etherscan.io/address/0x68278Bf0811A896C80e6e36c88e5c32BB757e5a9)
 - **Zama FHEVM Documentation**: [docs.zama.ai](https://docs.zama.ai/fhevm)
 - **Sepolia Faucet**: [sepoliafaucet.com](https://sepoliafaucet.com/)
 
-## 📄 License
+## License
 
 This project is licensed under the BSD-3-Clause-Clear License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -211,7 +211,7 @@ This project is licensed under the BSD-3-Clause-Clear License - see the [LICENSE
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Zama AI](https://zama.ai/) for FHEVM technology
 - [FHEVM React Template](https://github.com/zama-ai/fhevm-react-template) for the foundation
@@ -219,4 +219,4 @@ This project is licensed under the BSD-3-Clause-Clear License - see the [LICENSE
 
 ---
 
-**Built with ❤️ using Zama FHEVM technology**
+**Built with Zama FHEVM technology**
