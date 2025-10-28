@@ -132,7 +132,7 @@ export function Player1View({ gameData, actions, uiState }: Player1ViewProps) {
         <div>
           <span className="font-medium">Opponent&apos;s move:</span>
           <div className="flex items-center gap-1 mt-1">
-            <span className="text-xs font-bold text-green-400">ZAMA</span>
+            <span className="text-xs font-bold text-green-400">RPS</span>
             <p>Hidden</p>
           </div>
         </div>
@@ -207,7 +207,7 @@ export function Player2View({ gameData, actions, uiState }: Player2ViewProps) {
       <div>
         <span className="font-medium">Opponent&apos;s move:</span>
         <div className="flex items-center gap-1">
-          <span className="text-xs font-bold text-green-400">ZAMA</span>
+          <span className="text-xs font-bold text-green-400">RPS</span>
           <p>Hidden</p>
         </div>
       </div>

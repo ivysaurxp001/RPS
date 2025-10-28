@@ -44,7 +44,7 @@ function AppLogo() {
       <FaHandRock className="size-8 text-cyan-400" />
       <FaHandPaper className="size-8 text-purple-400" />
       <FaHandScissors className="rotate-90 size-8 text-pink-400" />
-      <span className="text-green-400 font-bold text-lg">ZAMA</span>
+      <span className="text-green-400 font-bold text-lg">RPS</span>
     </div>
   );
 }
