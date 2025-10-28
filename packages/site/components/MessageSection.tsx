@@ -1,5 +1,3 @@
-import { printProperty } from "./DataDisplay";
-
 export function MessageSection({ message }: { message: string }) {
   if (!message) return null;
   
