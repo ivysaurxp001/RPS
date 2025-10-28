@@ -130,7 +130,7 @@ export const RockPaperScissorsDemo = () => {
       <div className="col-span-full mx-4 md:mx-20 glass-card rounded-2xl p-6 text-white">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-            🔐 Encrypted Rock-Paper-Scissors
+             Encrypted Rock-Paper-Scissors
           </h1>
           <p className="text-lg md:text-xl font-mono text-gray-300">
             Powered by <span className="text-cyan-400 font-bold">Zama FHEVM</span> • Privacy-Preserving Gaming

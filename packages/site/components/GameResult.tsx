@@ -87,13 +87,13 @@ export function GameResultDetails({
   const getMoveIcon = (move: string) => {
     switch (move?.toLowerCase()) {
       case "rock":
-        return <FaHandRock />;
+        return <FaHandRock className="text-cyan-500" />;
       case "paper":
-        return <FaHandPaper />;
+        return <FaHandPaper className="text-purple-500" />;
       case "scissors":
-        return <FaHandScissors className="rotate-90" />;
+        return <FaHandScissors className="rotate-90 text-pink-500" />;
       default:
-        return <FaQuestion />;
+        return <FaQuestion className="text-gray-500" />;
     }
   };
 

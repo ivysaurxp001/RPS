@@ -80,7 +80,7 @@ INFURA_API_KEY="your_infura_api_key_here"
 ETHERSCAN_API_KEY="your_etherscan_api_key_here"
 ```
 
-## 🎮 How to Play
+##  How to Play
 
 ### Option 1: Play on Sepolia Testnet (Recommended)
 
@@ -198,18 +198,6 @@ FHEVM-RPS/
 - **Contract on Sepolia**: [Etherscan](https://sepolia.etherscan.io/address/0x68278Bf0811A896C80e6e36c88e5c32BB757e5a9)
 - **Zama FHEVM Documentation**: [docs.zama.ai](https://docs.zama.ai/fhevm)
 - **Sepolia Faucet**: [sepoliafaucet.com](https://sepoliafaucet.com/)
-
-## License
-
-This project is licensed under the BSD-3-Clause-Clear License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## Acknowledgments
 

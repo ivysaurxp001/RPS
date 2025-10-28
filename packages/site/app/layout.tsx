@@ -6,7 +6,6 @@ import {
   FaHandRock,
   FaHandPaper,
   FaHandScissors,
-  FaLock,
 } from "react-icons/fa";
 
 export const metadata: Metadata = {
@@ -45,7 +44,7 @@ function AppLogo() {
       <FaHandRock className="size-8 text-cyan-400" />
       <FaHandPaper className="size-8 text-purple-400" />
       <FaHandScissors className="rotate-90 size-8 text-pink-400" />
-      <FaLock className="size-8 text-green-400" />
+      <span className="text-green-400 font-bold text-lg">ZAMA</span>
     </div>
   );
 }
